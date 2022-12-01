@@ -16,8 +16,11 @@ How to use this template
 2. Add repository secrets `AOC_SESSION` and `AOC_USER_ID`
 3. Replace 20XX with correct year in README.md and workflow files
 
-Once all the input files for that year have been downloaded, remove
-the `on: schedule: cron` trigger from `aoc-download-input.yml`.
+Every day during December, the `aoc-download-input.yml` workflow will
+download the input files. Once all the input files for that year have
+been downloaded, remove the trigger so that it doesn't run
+unnecessarily.
 
-Once you have all 50 stars, remove the `on: push` trigger from
-`aoc-badges.yml`.
+Every time a dayXX.py file is added/modified, the `aoc-badges.yml`
+workflow will update the badges in the Readme. Once you have all 50
+stars, remove the trigger so that it doesn't run unnecessarily.
