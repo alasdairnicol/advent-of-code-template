@@ -15,7 +15,7 @@ jobs:
           python .github/workflows/aoc_download_input.py
         env:
           session: ${{ secrets.AOC_SESSION }}
-          year: 2022
+          year: 20XX
       - name: 📤 Push
         run: |
           git config --global user.email "<>"
