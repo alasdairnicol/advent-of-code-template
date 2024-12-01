@@ -15,8 +15,6 @@ How to use this template
 1. Create new repository from template
 2. Add repository secrets `AOC_SESSION` and `AOC_USER_ID`
 3. Replace 20XX with correct year in README.md and workflow files
-4. In the [action settings](https://github.com/alasdairnicol/advent-of-code-2023/settings/actions)
-select 'Read and write permissions' under 'Workflow permissions'
 
 Every day during December, the `aoc-download-input.yml` workflow will
 download the input files. Once all the input files for that year have
